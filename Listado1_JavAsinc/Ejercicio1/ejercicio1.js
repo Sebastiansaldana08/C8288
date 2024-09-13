@@ -57,11 +57,11 @@ function procesarUsuarios() {
         if (err) {
             return console.error('Error al leer el archivo:', err.message);
         }
-
-        // Definimos un contador para seguir el proceso de todos los usuarios
-        let contador = 0;
         // Aqui guardamos los datos con sus datos personales unicos
         const usuarioConDatos = [];
+        
+        // Definimos un contador para seguir el proceso de todos los usuarios
+        let contador = 0;
 
         // Iteramos sobre cada usuario
         usuarios.forEach(usuario => {
