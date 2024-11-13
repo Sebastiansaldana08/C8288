@@ -10,8 +10,7 @@ http://localhost:3000/about - Muestra la página "Acerca de".
 
 ### Rutas Dinámicas y Opcionales
 
-- Muestra información de un usuario específico según el id proporcionado. Ejemplo: http://localhost:3000/users/123.
-http://localhost:3000/invoice/
+- Muestra información de un usuario específico según el id proporcionado. Ejemplo: http://localhost:3000/users/123 - http://localhost:3000/invoice/
 
 - Muestra una factura específica si se proporciona el id; si no, muestra todas las facturas. Ejemplo: http://localhost:3000/invoice/456 o http://localhost:3000/invoice.
 
