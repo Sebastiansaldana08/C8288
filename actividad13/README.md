@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Actividad 13: Integración de una API GraphQL en una Aplicación Next.js
 
-## Getting Started
+## Objetivo
+Integrar una API GraphQL en una aplicación Next.js para optimizar la gestión y obtención de datos. Esta actividad incluyó la configuración de un servidor Apollo, la definición de esquemas y resolvers, y la ejecución de consultas y mutaciones en el Apollo Sandbox.
 
-First, run the development server:
+## Descripción General
+La actividad se enfocó en implementar el flujo básico de una API GraphQL en una aplicación Next.js. Utilizamos Apollo Server para gestionar las consultas y mutaciones y creamos resolvers personalizados para manejar el flujo de datos. La integración de GraphQL permite un acceso y actualización más eficientes de los datos, así como una mayor flexibilidad en las consultas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Pasos Realizados
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. Configuración del Entorno
+- Instalación de las dependencias necesarias: `@apollo/server`, `graphql`, y `@as-integrations/next`.
+- Creación de la carpeta de trabajo `actividad13` y configuración del entorno de desarrollo en Next.js.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. Definición del Esquema GraphQL
+- Creación de un archivo `schema.graphql` para definir los tipos de datos, consultas, y mutaciones soportados por la API.
+- Definición de los tipos principales para la API:
+  - **Tipos de entidad**: Definimos tipos básicos de entidades y sus propiedades para reflejar la estructura de datos utilizada en la aplicación.
+  - **Consultas**: Definimos consultas para obtener datos específicos y listas de elementos.
+  - **Mutaciones**: Creamos mutaciones para agregar, actualizar y eliminar elementos en la API.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Implementación de Resolvers
+- Creación de resolvers en un archivo `resolvers.js` que gestiona la lógica de cada consulta y mutación definida en el esquema.
+- Configuración de funciones para manejar la obtención y manipulación de datos:
+  - **Query resolvers**: Se encargan de manejar la obtención de datos según los parámetros recibidos.
+  - **Mutation resolvers**: Implementan la lógica para la creación, actualización y eliminación de datos.
 
-## Learn More
+### 4. Configuración del Servidor Apollo
+- Configuración de Apollo Server en Next.js para manejar las solicitudes GraphQL.
+- Configuración del endpoint de GraphQL en `api/graphql` utilizando `ApolloServer` y los resolvers definidos.
+- Habilitación de **CORS** para permitir solicitudes desde diferentes orígenes.
 
-To learn more about Next.js, take a look at the following resources:
+### 5. Ejecución de Consultas y Mutaciones en Apollo Sandbox
+- Uso de Apollo Sandbox para probar las consultas y mutaciones definidas en el esquema.
+- Ejecución de consultas básicas para obtener datos y verificación de respuestas en tiempo real.
+- Ejecución de mutaciones para probar la inserción, actualización y eliminación de datos.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 6. Ejercicios Avanzados en Apollo Sandbox
+Para extender la funcionalidad de la API y cubrir casos de uso avanzados:
+- **Paginación**: Implementación de parámetros de paginación en las consultas para optimizar el rendimiento en listas largas.
+- **Autenticación**: Configuración de una autenticación básica en los resolvers para proteger ciertos datos sensibles.
+- **Optimización de consultas**: Configuración de consultas más eficientes mediante la optimización de los resolvers.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Buenas Prácticas y Consideraciones
+- **Validación de datos**: Asegurarse de que los datos enviados en las mutaciones cumplen con los requisitos del esquema.
+- **Uso de tokens y autenticación**: Implementar medidas de seguridad para proteger el acceso a la API.
+- **Manejo de errores**: Configurar mensajes de error claros en los resolvers para manejar casos de datos faltantes o errores de permisos.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Conclusión
+Esta actividad nos permitió implementar y configurar una API GraphQL funcional en Next.js con Apollo Server. Asimismo, se verificó que la integración de GraphQL facilita la gestión de datos y permite consultas flexibles y optimizadas en la aplicación, mejorando la experiencia de usuario y el rendimiento de la aplicación.

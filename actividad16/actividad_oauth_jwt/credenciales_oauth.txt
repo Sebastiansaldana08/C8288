@@ -1,0 +1,3 @@
+Client ID: client-1731552003088
+Client Secret: d78989c30e6403bc7bb1d5861bd84137
+Redirect URI: http://localhost:3000/oauth/callback

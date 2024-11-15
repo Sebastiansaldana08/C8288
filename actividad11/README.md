@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Actividad 11 - Documentación
 
-## Getting Started
+### Descripción de la Actividad
+En esta actividad, hemos realizado la migración de una aplicación Express.js y React a Next.js. Los objetivos de la actividad incluyeron la configuración de rutas de API, la creación de rutas de página, y el uso de TypeScript para manejar interfaces personalizadas. 
 
-First, run the development server:
+### Objetivos
+1. **Migración de Rutas**: Convertir las rutas de Express.js a rutas de API en Next.js.
+2. **Creación de Rutas de Página**: Crear rutas para páginas en Next.js.
+3. **Integración de TypeScript**: Utilizar interfaces personalizadas y tipos para una mejor gestión de datos.
+4. **Optimización SEO**: Implementar optimizaciones de SEO específicas en la configuración de Next.js.
+5. **Pre-renderización Incremental (ISR)**: Aplicar técnicas de pre-renderizado.
 
+
+### Pasos Realizados
+
+1. **Migración de Rutas de API**: 
+   - Se implementaron las rutas en la carpeta `pages/api`, reemplazando las rutas de Express.js con funciones de Next.js.
+
+2. **Implementación de TypeScript**:
+   - Configuración del archivo `tsconfig.json` para soportar TypeScript.
+   - Definición de tipos e interfaces personalizados en cada componente para asegurar una mejor tipificación y facilitar el mantenimiento.
+
+3. **Configuración de Rutas de Página**:
+   - Implementación de páginas dentro de la carpeta `pages`.
+   - Uso de rutas dinámicas y estáticas de acuerdo a los requerimientos de la aplicación.
+
+4. **Integración de CSS Modular**:
+   - Uso de estilos modulares para cada componente, asegurando un mejor control sobre el alcance de los estilos y evitando conflictos.
+
+5. **Optimización SEO**:
+   - Implementación de etiquetas de metadatos (`<head>`) específicas para cada página en Next.js.
+   
+6. **Pre-renderización Incremental (ISR)**:
+   - Uso de técnicas de pre-renderizado en la configuración de Next.js para optimizar el rendimiento.
+
+### Ejecución del proyecto
+
+Ejecute el proyecto con los siguientes comandos:
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+````
