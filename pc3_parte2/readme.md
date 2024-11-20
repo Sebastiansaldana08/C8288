@@ -819,6 +819,6 @@ Uno de los retos más significativos fue la configuración de las claves de cifr
 
 Gracias por su atención!
 
-**Curso**: Desarrollo web
-**Docente**: Cesar Lara
-**Alumno**: Sebastián Saldaña Rodríguez
+- **Curso**: Desarrollo web
+- **Docente**: Cesar Lara
+- **Alumno**: Sebastián Saldaña Rodríguez
